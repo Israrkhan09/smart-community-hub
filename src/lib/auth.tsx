@@ -70,7 +70,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const value = useMemo<AuthState>(() => {
     const profile = meQuery.data?.profile ?? null;
     const displayName =
-      profile?.name || (user?.user_metadata?.name as string) || user?.email?.split("@")[0] || "Member";
+      profile?.name || (user?.user_metadata?.["name"] as string) || user?.email?.split("@")[0] || "Member";
     return {
       user,
       profile,

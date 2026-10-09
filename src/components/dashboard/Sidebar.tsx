@@ -54,7 +54,7 @@ export const Sidebar = memo(function Sidebar({ role, displayName, open, onToggle
       className={`fixed left-0 top-0 z-[60] flex h-screen flex-col border-r bg-sidebar transition-[width] duration-200 ${open ? "w-72" : "w-20"}`}
     >
       <div className={`relative flex items-center p-6 pb-8 ${open ? "" : "justify-center px-4"}`}>
-        <Link to="/dashboard" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg shadow-primary/30">
             <Building size={20} />
           </div>
